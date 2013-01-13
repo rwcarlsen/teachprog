@@ -1,6 +1,6 @@
 
-Command Line Interface
-=======================
+Command Line Interface (or Terminal)
+=====================================
 
 It is a program that runs programs.  You type in commands, and it runs
 programs accordingly and prints the results to the screen.
@@ -14,21 +14,69 @@ Terminal Concepts:
     hierarchy of folders+files where slashes "/" in the file handle act as
     delimiters for subfolder (stored within) relationships.
 
-    - Working directory: the "location" that all terminal commands are
-      executed from.
+    - Current working directory (cwd): the "location" or path that all terminal
+      commands are executed from.
 
+    - File Paths: a series of slash-separated words containing
+      alpha-numeric and a few other characters (_, -, etc.) that uniquely
+      identify every file on a file-system.  
+
+      + Relative: path with respect to the cwd. Does NOT start with a slash::
+
+        .                         (cwd)
+        ./                        (trailing slash is optional)
+        ../                       (parent directory - going out of or undoing the most recent dir)
+        Pictures/2012/January
+        Pictures/../Pictures/..   (cwd)
+
+
+      + Absolute: path with respect to the root of the file system. DOES
+        start with a slash::
+
+        /                           (file-system root)
+        /home/robert
+        /home/robert/Pictures
+
+      + Wildcards: Use the asterisk (*) to "match" zero or more of any
+        character.  The terminal will expand your entry to all files in the
+        cwd that match the pattern::
+
+        cwd looks like:
+
+          dir1  dir2  file1.txt  file2.txt  pic1.jpg  pic2.jpg  cheese.txt
+
+        Wildcard expression               Expands to
+        file*                             file1.txt file2.txt
+        *.txt                             file1.txt file2.txt cheese.txt
+        *2.*                              file2.txt pic2.txt
+
+  * Pipes
+  * Redirects
   * Environment
 
     - PATH
     - Variables
 
-  * Pipes
-  * Redirects
+Running programs
+-----------------
 
-Useful programs include:
+* Each command you give to the terminal is generally a single line of text.
+
+* Hitting enter executes the command
+
+* Many commands take "arguments" or extra parameters that instruct the
+  program to act/run in a certain way.  A command and each specified
+  argument are separated by one or more spaces.
+
+  - Positional/normal arguments: Start without a dash - e.g. file names
+
+  - option/flag arguments: Start with a dash
+
+* Useful programs include:
 
   * ls
   * cd
+  * mkdir
   * pwd
   * cp
   * rm
@@ -38,4 +86,14 @@ Useful programs include:
   * wc
   * cat
   * sort
+
+* Most programs can print out help information about how to use them when
+  you run it with the "--help" flag argument::
+
+    ls --help
+    wc --help
+    grep --help
+    mkdir --help
+
+  Or you can search on google for examples.
 
