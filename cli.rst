@@ -74,18 +74,20 @@ Running programs
 
 * Useful programs include:
 
-  * ls
-  * cd
-  * mkdir
-  * pwd
-  * cp
-  * rm
-  * mv
-  * find
-  * grep
-  * wc
-  * cat
+  * ls - list directory contents
+  * cd - change directory
+  * mkdir - make a new directory
+  * pwd - print the current working directory
+  * cp - copy files from one location to another
+  * rm - remove a file (cannot be undone!)
+  * mv - move files (between directories - or renaming)
+  * find - find files on the file system
+  * grep - search for lines in files that match a search string
+  * wc - output the line, word, char count of files
+  * cat - concatenate the contents of named files
   * sort
+  * tail - show the last few lines of named files
+  * nano - a simple command line text editor
 
 * Most programs can print out help information about how to use them when
   you run it with the "--help" flag argument::
