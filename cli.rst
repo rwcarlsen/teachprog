@@ -50,8 +50,8 @@ Terminal Concepts:
         *.txt                             file1.txt file2.txt cheese.txt
         *2.*                              file2.txt pic2.txt
 
-  * Pipes
-  * Redirects
+  * Piping and Redirection: http://www.datasavantconsulting.com/roland/piping.html
+
   * Environment
 
     - PATH
