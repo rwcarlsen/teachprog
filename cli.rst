@@ -87,6 +87,7 @@ Running programs
   * cat - concatenate the contents of named files
   * sort
   * tail - show the last few lines of named files
+  * less - show content in scrollable/searchable document form (often piped into)
   * nano - a simple command line text editor
 
 * Most programs can print out help information about how to use them when
